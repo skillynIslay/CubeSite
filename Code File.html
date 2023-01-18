@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cube Basics!</title>
+        <style>
+            body{
+                background-color: white;
+                margin: 10px;
+                padding: 0px;
+            }
+            .LargeCaption{
+
+                background-color: #F0F0F2;
+                padding: 0px 7px;
+                width: 47%;
+                margin: 3px;
+                border-radius: 15px;
+            }
+            .TopMargin{
+                color: black;
+                font-size: 200%;
+                width: 100%;
+            }
+            .WhiteWrite{
+
+                background-color: #F0F0F2;
+                font-size: large;
+                padding: 5px 7px;
+                margin: 3px;
+                border-radius: 15px;
+            }
+            .List{
+                font-size: 200%;
+            }
+            .String{
+                font-size: 130%;
+            }
+            .FlRight{
+                float: right;
+            }
+            .FlLeft{
+                float: left;
+            }
+            .Fix{
+                float: right;
+            }
+            .pp{
+                width: 250px;
+                height: 250px;   
+            }
+            .Alg{
+                font-weight: bold;
+                font-size: 180%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>            
+        <div class="Fix">
+            <a href="https://twitter.com/ALISTHEELAME"><img src="Twt Logo.png" width="30px"></a>
+        </div>
+        <div class="TopMargin">
+            <form>
+                <p>
+                    <strong>Difficulty: </strong> 
+                    <select onchange="location = this.value" style="position: relative; top: -3px;">
+                        <option selected value="https://jperm.net/3x3">Beginner</option></a>
+                        <option value="https://jperm.net/3x3">Intermediate</option>
+                        <option value="https://jperm.net/3x3">Pro</option>
+                    </select>
+                </p>
+            </form>
+        </div>
+        <div class="LargeCaption">
+            <h1>
+            Solve the cube in only a few steps!
+            </h1>
+        </div>
+        <div class="WhiteWrite">
+                <ol>
+                    <hr>
+                    <li class="List">White Cross</li>
+                    <hr>
+                    <p class="String">The step of creating the yellow cross can be skipped by directly creating the white cross. The white cross does not require any algorithm</p>
+                    <img class="pp" src="Center1.png"><p class="String">You have to add in white edge pieces into the white side of the cube and create a cross on the white side.</p>
+                    <img class="pp" src="Center2.png"><p class="String">Once you are done with adding your white pieces your cube should look somewhat like this.</p>
+
+                    <hr>
+                    <li class="List">First Layer</li>
+                    <hr>
+                    <p class="String">To finish the lowest layer/white face of the cube you have to memorise 4 moves</p>
+                    <p class="Alg">R U R' U'</p>
+                    <p class="String">Align the required piece above where you want to place and repeat the these 4 moves until you it is in place</p>
+                        <img class="pp" src="R.png"><img class="pp" src="U.png"><img class="pp" src="R'.png"><img class="pp" src="U'.png">
+                    <hr>
+                    <li class="List">Second Layer</li>
+                    <hr>
+                    <p class="String">Align the edge pieces above their colors, forming an upside down T</p>
+                    <img class="pp" src="Case 1.png"><img class="pp" src="Case2.png">
+                    <p class="String">If the respective corner is on the right of the edge piece perform</p>
+                    <p class="Alg">U R U R' U' F U' F'</p>
+                    <p class="String">If the respective corner piece is on the left of the edge piece perform</p>
+                    <p class="Alg">U' L' U' L U F' U F</p>
+                </ol>
+        </div>
+    </body>
+
+
+</html>
